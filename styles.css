@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif; 
+    margin: 0;
+    padding: 0;
+    /* font-weight: 300; */
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+button, input {
+    font-family: inherit;
+}
+
+.tags-wrapper {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2em;
+}
+
+.tags-wrapper .tags-content {
+    margin: 10px 0;
+}
+
+.tags-content p {
+    font-size: 15px;
+}
+
+.tags-container ul {
+    display: flex;
+    padding: 7px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.tags-container ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    border: 1px solid #e3d1e1;
+    border-radius: 5px;
+    /* top, right, bottom, left */
+    padding: 2.5px 5px;
+    margin-right: 5px;
+    background: #f2f2f2;
+    user-select: none;
+}
+
+.tags-container ul li span {
+    display: flex;
+    cursor: pointer;
+    justify-content: center; 
+    align-items: center;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.tags-container ul li span:hover {
+    background: #dfdfdf;
+}
+
+.tags-container ul input {
+    flex: 1;
+    border: none;
+    outline: none;
+}
+
+.tags-container ul input:focus {
+    outline:none!important;
+}
+
+.tags-remove-all button {
+    outline: none;
+    background: none;
+}
